@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    /* body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    } */
+     .disply{
+         display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+       <center>
+      <div style="background-color: burlywood; height: 50px; padding-top: 30px;">
+    <a href="index.html" target="_blank">Home</a> |
+    <a href="about.html" target="_blank">About</a> |
+    <a href="contact.html" target="_blank">Conact</a>
+</div>
+</center>
+<div class="disply">
+  <form>
+    <h1>Contact Me</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit" id="submit" onclick="greet()">Send Message</button>
+  </form>
+  </div>
+
+  <footer style="background-color: #deb887; color: rgb(0, 0, 0); text-align: center; padding: 5px 0;">
+  <p>© 2025 Sameen Fatima | All Rights Reserved.</p>
+</footer>
+<script>
+    function greet() {
+        alert("✨Thank you for your Time✨")
+        
+    }
+</script>
+
+</body>
+</html>
