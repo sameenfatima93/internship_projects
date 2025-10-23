@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(11, 83, 96);
+    box-shadow: rgba(159, 157, 157, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(223, 222, 222, 0.09) 0px 8px 4px, rgba(155, 136, 136, 0.09) 0px 16px 8px, rgba(189, 172, 172, 0.09) 0px 32px 16px;
+
+}
+
+.head {
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.head li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.iteme a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.head li:hover {
+    text-decoration: underline;
+    transform: translate(2, 2);
+}
+
+/* hero section */
+.hero {
+    margin-top: 0px;
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/leptopbg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.profileimag {
+    position: absolute;
+    top: 14%;
+    left: 2%;
+    z-index: 1;
+}
+
+.text {
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    /* border: 3px solid rgb(255, 252, 252); */
+    z-index: 1;
+}
+
+.overflow {
+    position: relative;
+    bottom: 20px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(29, 30, 30, 0.445);
+    z-index: 1;
+}
+
+h1,
+span {
+    color: aliceblue;
+    font-size: 50px;
+
+
+}
+
+span {
+    font-family: cursive;
+    text-align: left;
+}
+
+marquee {
+    color: rgb(4, 46, 53);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 64, 69);
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(6, 64, 69);
+    color: rgb(255, 255, 255);
+    ;
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(200, 233, 242);
+}
+
+.int {
+    padding: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(6, 64, 69);
+    text-align: center;
+    height: 50px;
+}
+
+.para {
+    font-size: 22px;
+    width: 600px;
+    text-align: justify;
+    margin: 40px auto;
+}
+.crd:hover{
+    background-color: rgb(4, 76, 87);
+    color: rgb(251, 251, 251);
+}
+h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(7, 59, 78);
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+table{
+    text-align: center;
+    margin: 0px auto;
+}
+tr,th,td{
+    padding: 10px;
+    border: 2px solid rgb(6, 57, 81);
+}
+.last{
+    height: 300px;
+    width: 100%;
+    border: 4px groove rgb(13, 50, 63);
+    background-color: rgb(203, 238, 244);
+
+}
