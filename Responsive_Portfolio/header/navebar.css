@@ -116,8 +116,9 @@ nav a {
 }
 
 header nav a:hover {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    color: #371010;
+    /* border-top: 2px solid white;
+    border-bottom: 2px solid white; */
     /* color: #3bc6f5;
 */
     /* text-decoration: underline; */
