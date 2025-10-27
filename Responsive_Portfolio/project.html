@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header/headstyle.css">
+  
+</head>
+
+<body>
+ <header class="my-head">
+        <div class="container">
+            <button class="btn text-white float-end  togle" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling">
+                ☰
+            </button>
+
+            <div class="inner">
+                <div class="mylog">
+                    <img src="images/sameen_logo-removebg-preview.png" alt="" height="80px" width="100px">
+                    <!-- <h2>sameen fatima</h2> -->
+                </div>
+                <div class="mynave">
+                    <nav id="navbarr">
+                        <a href="index.html">Home</a>
+                        <a href="index.html">About</a>
+                        <a href="project.html">project</a>
+                        <a href="contact.html">Contact</a>
+
+                    </nav>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end my-sidebar " data-bs-scroll="true" data-bs-backdrop="false"
+                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title logo" id="offcanvasScrollingLabel "> <img
+                            src="images/sameen_logo-removebg-preview.png" alt="" height="80px" width="100px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <nav>
+                        <ul>
+                            <li><span>Home</span></li>
+                            <li><span>Products</span></li>
+                            <li><span>Services</span></li>
+                            <li><span>Contact</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+  <section class="project p-5 mx-auto hr-section">
+     <h1 class="textp">
+        My <span>project</span>
+      </h1> 
+      </section>
+  <!-- <section class="projects container">
+  <h1 class="textp">My <span>Projects</span></h1> -->
+<!-- <div class="container bgimg-p "> -->
+  <section class="project1 p-5 mx-auto">
+  <div class="project-grid ">
+    <div class="card">
+      <img src="images/weatherapp.png" alt="Weather App">
+      <div class="card-content">
+        <h2>Weather App</h2>
+        <p>This weather app shows live temperature, conditions, and humidity data fetched from an API. Fully responsive and beautifully designed.</p>
+        <a href="https://capable-longma-8c587c.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/rock,paper,sceser.png" alt="Game App">
+      <div class="card-content">
+        <h2>Rock-Paper-Scissors</h2>
+        <p>An interactive game built with JavaScript where players compete against the computer in real-time. Clean and minimal UI.</p>
+        <a href="https://frolicking-cobbler-764ddc.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/nexcent.png" alt="Nexcent">
+      <div class="card-content">
+        <h2>Nexcent Platform</h2>
+        <p>A modern membership management landing page with login and sign-up flow, fully responsive layout and neat design.</p>
+        <a href="https://brilliant-torte-e89590.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/saltAndPaper.png" alt="Restaurant Clone">
+      <div class="card-content">
+        <h2>Salt’n Pepper Clone</h2>
+        <p>A full restaurant website clone showing menus, branches, and order online options — designed with HTML, CSS, and JS.</p>
+        <a href="https://candid-crostata-688e53.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/down website.png" alt="Restaurant Clone">
+      <div class="card-content">
+        <h2>DOWN Dating App – Landing Page (Promotional Website)</h2>
+        <p>Developed a responsive landing page for the DOWN Dating App using HTML, CSS, and JavaScript, featuring a modern UI with About, Features, and Call-to-Action sections to highlight the app’s values of privacy, authenticity, and global connectivity.</p>
+        <a href="https://effervescent-sopapillas-124e9a.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/athletweb.png" alt="Restaurant Clone">
+      <div class="card-content">
+        <h2>Athlete’s Edge</h2>
+        <p>A dynamic sports website that covers cricket, basketball, snooker, and more. It highlights top athletes, upcoming matches, and engaging sports content in a clean, user-friendly design..</p>
+        <a href="https://effervescent-tapioca-fab50c.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<footer class="my-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/sameen_logo-removebg-preview.png" alt="Logo" height="70px">
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="index.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="footer-text">© 2025 Sameen Fatima | All Rights Reserved</p>
+  </div>
+</footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

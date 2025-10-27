@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .my-head {
+            height: 60px;
+            width: 100%;
+            /* background-color:
+rgb(11, 83, 96); */
+            /* background-color: rgb(6, 60, 70); */
+            background: rgb(0, 0, 0);
+            /* filter: blur(10px); */
+            position: sticky;
+            color: #fff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0px;
+            /* display: flex; */
+            /* align-items: center; */
+            /*
+justify-content: center; */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            font-size: 30px;
+            font-family:
+                sans-serif;
+            background-color: rgb(215, 229, 243);
+            /* border: 2px solid black; */
+            border-right: 7px solid rgb(69, 34, 5);
+            letter-spacing: 0.1em;
+            width: 9em;
+            height: 1.5em;
+            line-height: 1.5em;
+            position: relative;
+            overflow: hidden;
+            margin:
+                0.5em;
+            cursor: pointer;
+        }
+
+        nav ul li span {
+            color: rgb(192, 232, 217);
+            mix-blend-mode: difference;
+        }
+
+        nav ul li::before {
+            content: '';
+            position: absolute;
+            width: 2.9em;
+            height: inherit;
+            background-color: rgb(69, 34, 5);
+            border-radius: 45%;
+            /*
+border-top-right-radius: 55%; border-bottom-right-radius: 55%; */
+            top: 0;
+            left: -2.40rem;
+            transition: 0.5s ease-out;
+        }
+
+        nav ul li:hover::before {
+            transform: scale(7);
+        }
+
+        .my-sidebar {
+            background-color: rgb(11, 83, 96);
+            position: fixed;
+            /*
+important: ensures it's on top of normal flow */
+            z-index: 1055;
+        }
+
+        .logo {
+            cursor: pointer;
+            font-family: "Vidaloka",
+                serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(69, 34, 5);
+        }
+
+        .logo:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor:
+                pointer;
+            color: #fbfbfb;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+
+        header nav a:hover {
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            /* color: #3bc6f5;
+*/
+            /* text-decoration: underline; */
+        }
+
+        @media only screen and (max-width: 768px) {
+            #navbarr {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menu-btn {
+                display: block;
+            }
+        }
+
+        .inner {
+            display: flex;
+            justify-content:
+                space-between;
+            align-items: center;
+            height: 55px;
+            /* float: right; */
+            margin-right: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .mynave {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 55px;
+            float: right;
+            margin-right: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .pimg {
+            height: 100px;
+            border: 3px solid red;
+            object-fit: contain;
+        }
+
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+        } */
+
+        /* ===== Header (Top Bar) ===== */
+        /* header { */
+        /* background-color: #0a3d2e; */
+        /* deep green */
+        /* color: #fff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } */
+
+        /* .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .logo h2 {
+            font-size: 1.4rem;
+            color: #d9b08c; */
+        /* light brown */
+        /* font-weight: 600;
+            margin: 0;
+        } */
+
+        /* .menu-btn {
+            font-size: 26px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        } */
+
+        /* ===== Desktop Nav ===== */
+        /* nav.desktop-nav {
+            display: flex;
+            gap: 25px;
+        } */
+
+        /* nav.desktop-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav.desktop-nav a:hover {
+            color: #d9b08c;
+            border-bottom: 2px solid #d9b08c;
+        } */
+
+        /* ===== Sidebar (Offcanvas) ===== */
+        /* .offcanvas {
+            background-color: #0a3d2e;
+            color: #fff;
+            width: 250px;
+            transition: 0.4s;
+        }
+
+        .offcanvas-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .offcanvas-body ul {
+            list-style: none;
+            padding: 0; */
+        /* }
+
+        .offcanvas-body ul li {
+            margin: 20px 0;
+            padding: 10px 0;
+            text-align: center;
+            background-color: #144d3b; */
+        /* slightly lighter green */
+        /* border-left: 5px solid #7a5230; */
+        /* brown accent */
+        /* transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .offcanvas-body ul li:hover {
+            background-color: #7a5230; */
+        /* brown on hover */
+        /* }
+
+        .offcanvas-body ul li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        } */
+
+        /* ===== Responsive ===== */
+        /* @media (max-width: 768px) {
+            .menu-btn {
+                display: block;
+            }
+
+            nav.desktop-nav {
+                display: none;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="my-head">
+        <div class="container"> <button class="btn text-white float-end menu-btn" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"> ☰ </button>
+            <div class="inner">
+                <div class="mylog"> <img src="images/sameen_logo-removebg-preview.png" alt="" height="80px"
+                        width="100px"> <!-- <h2>sameen fatima</h2> --> </div>
+                <div class="mynave">
+                    <nav id="navbarr"> <a href="index.html">Home</a> <a href="index.html">About</a> <a
+                            href="project.html">project</a> <a href="contact.html">Contact</a> </nav>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end my-sidebar1 " data-bs-scroll="true" data-bs-backdrop="false"
+                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title logo" id="offcanvasScrollingLabel "> <img
+                            src="images/sameen_logo-removebg-preview.png" alt="" height="80px" width="100px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav>
+                        <ul>
+                            <li><span>Home</span></li>
+                            <li><span>Products</span></li>
+                            <li><span>Services</span></li>
+                            <li><span>Contact</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <header>
+    <div class="container nav-inner">
+      Logo
+    <div class="logo">
+        <img src="images/sameen_logo-removebg-preview.png" alt="Logo">
+        <h2>Sameen</h2>
+    </div> -->
+
+    <!-- Desktop Nav -->
+    <!-- <nav class="desktop-nav"> -->
+    <!-- <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav> -->
+
+    <!-- Menu Button -->
+    <!-- <button class="menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        ☰
+      </button>
+    </div>
+  </header> -->
+
+    <!-- ===== Sidebar / Offcanvas ===== -->
+    <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div> -->
+
+    <!-- <div class="offcanvas-body">
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="project.html"> Projects</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+      </ul>
+    </div>
+  </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Satisfy&family=Vidaloka&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="header/headstyle.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="my-head">
+        <div class="container">
+            <button class="btn text-white float-end togle" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling">
+                ☰
+            </button>
+
+            <div class="inner">
+                <div class="mylog">
+                    <img src="images/sameen_logo-removebg-preview.png" alt="" height="80px" width="100px">
+                    <!-- <h2>sameen fatima</h2> -->
+                </div>
+                <div class="mynave">
+                    <nav id="navbarr">
+                        <a href="index.html">Home</a>
+                        <a href="#">About</a>
+                        <a href="project.html">project</a>
+                        <a href="contact.html">Contact</a>
+
+                    </nav>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end my-sidebar " data-bs-scroll="true" data-bs-backdrop="false"
+                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title logo" id="offcanvasScrollingLabel "> <img
+                            src="images/sameen_logo-removebg-preview.png" alt="" height="80px" width="100px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+
+                <div class="offcanvas-body">
+                    <nav>
+                        <ul>
+                            <li><span>Home</span></li>
+                            <li><span>Products</span></li>
+                            <li><span>Services</span></li>
+                            <li><span>Contact</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--*******____ navbar end_____******* -->
+
+    <section>
+        <!-- hero section start -->
+        <div class="hero-section">
+            <div class="overly"></div>
+
+            <div class="box box1 box-cont">
+                <h1 class="satisfy-regular">Hi! <span>I Am</span></h1>
+                <h2>Sameen Fatima</h2>
+                <p>Front-end Developer | Ui/Ux Designer | WordPress Developer</p>
+                <a href="updated_cv.pdf" download class="d-cvbtn">Download CV</a>
+            </div>
+
+            <div class="box box2 box-img">
+                <dotlottie-wc src="https://lottie.host/9b8d677d-c34e-4909-9ad4-0c531e6cc05d/cjsKFOH5iT.lottie"
+                    style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+            </div>
+        </div>
+
+    </section>
+    <section class="intro">
+        <div class="introtext">
+            <h1 class="int1"><span>It's</span>Me !</h1>
+            <h4>Sameen Fatima</h4>
+            <p id="text">
+                I’m <b>Sameen Fatima,</b> a passionate <em> Frontend Developer</em> and <em>UI/UX Designer</em> who
+                loves bringing ideas to life.through clean, modern, and user-friendly websites.
+                <span id="moreText" style="display: none;">
+                    My journey in tech started with a curiosity to build
+                    something of my own — and today, it has turned into a strong passion for web development and design.
+                    I specialize in <q>HTML,</q> <q>CSS, </q> <q>JavaScript,</q> and <q>WordPress,</q> and I enjoy
+                    creating websites that not only look good
+                    but also provide smooth and meaningful user experiences. Along with designing beautiful interfaces,
+                    I’m also
+                    learning the MERN Stack to become a <mark>full-stack developer</mark> and build more powerful and
+                    dynamic web easily.
+                </span>
+            </p>
+            <button onclick="toggleText()" id="myBtn">Learn More</button>
+
+
+        </div>
+    </section>
+
+    <!-- <section class="my-cards container">
+        <div class="card-group d-flex gap-4 ">
+            <div class="card">
+                <img src="images/frntd.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Front-end Development</h5>
+                    <p class="card-text">if you want to see my project lets click the button</p>
+                </div>
+                <div class="card-footer">
+                    <button class="d-cvbtn"><a href="#"></a>Click Here</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/frntd.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Front-end Development</h5>
+                    <p class="card-text">if you want to see my project lets click the button</p>
+                </div>
+                <div class="card-footer">
+                    <button class="d-cvbtn"><a href="#"></a>Click Here</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/frntd.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Front-end Development</h5>
+                    <p class="card-text">if you want to see my project lets click the button</p>
+                </div>
+                <div class="card-footer">
+                    <button class="d-cvbtn"><a href="#"></a>Click Here</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section> -->
+
+    <section class="my-cards  py-5">
+        <h1><h1 class="int1">my<span></span>Services</span></h1></h1>
+  <div class="row g-4"> <!-- g-4 bootstrap ka gap class hai -->
+    
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100">
+        <img src="images/frntd.jpg" class="card-img-top" alt="Frontend">
+        <div class="card-body">
+          <h5 class="card-title">Front-end Development</h5>
+          <p class="card-text">If you want to see my project, click the button below.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn d-cvbtn1">Click Here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100">
+        <img src="images/frntd.jpg" class="card-img-top" alt="Frontend">
+        <div class="card-body">
+          <h5 class="card-title">Front-end Development</h5>
+          <p class="card-text">If you want to see my project, click the button below.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn d-cvbtn1">Click Here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card h-100">
+        <img src="images/frntd.jpg" class="card-img-top" alt="Frontend">
+        <div class="card-body">
+          <h5 class="card-title">Front-end Development</h5>
+          <p class="card-text">If you want to see my project, click the button below.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn d-cvbtn1">Click Here</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="my-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/sameen_logo-removebg-preview.png" alt="Logo" height="70px">
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="index.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="footer-text">© 2025 Sameen Fatima | All Rights Reserved</p>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
