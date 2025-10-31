@@ -1,5 +1,9 @@
 /* hero section */
-.hero-section{
+/* * {
+    cursor: pointer;
+} */
+
+.hero-section {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -15,7 +19,7 @@
 
 }
 
-.overly{
+.overly {
     height: 90vh;
     width: 100%;
     /* background-color: rgba(70, 68, 68, 0.338); */
@@ -116,13 +120,21 @@
     padding: 8px 28px;
     font-size: 1rem;
     border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
+    /* cursor: pointer !important; */
+    /* transition: all 0.3s ease; */
+    /* position: relative; */
     left: 35px;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
+    /* text-decoration: none; */
+    position: relative;
+    z-index: 99999;
+}
+
+.d-cvbtn a {
     text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .d-cvbtn:hover {
@@ -167,6 +179,8 @@
     line-height: 20px;
     padding: 70px 20px;
     margin-bottom: 30px;
+    position: relative;
+    z-index: -20;
 }
 
 .int1 {
@@ -250,6 +264,11 @@
     box-shadow: 0 4px 8px rgba(4, 102, 114, 0.5);
 }
 
+.crd-behind {
+    position: relative;
+    z-index: 1;
+}
+
 .crd-skl {
     text-align: center;
     margin: 40px 20px;
@@ -298,6 +317,7 @@
 }
 
 h1>.crd-skl {
+    text-transform: capitalize;
     font-size: 2.89em;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -321,114 +341,242 @@ h1>.crd-skl {
     background-color: rgb(46, 14, 14);
     z-index: 1;
 }
+
 .offcanvas-backdrop.show {
-  z-index: 9998 !important;
+    z-index: 9998 !important;
 }
+
 .textp {
-  height: 100%;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  margin: 100px auto;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 50px;
-  font-weight: bolder;
-  position: relative;
-  display: inline-block; /* add this */
-  z-index: 1;
-  
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 100px auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+    /* add this */
+    z-index: 1;
+
 }
 
 .textp::after {
-  content: "";
-  position: absolute;
-  bottom: 83%;
-  left: 44%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background-color: rgb(12, 70, 94);
-  border-radius: 2px;
-}
-/* project */
-.projects {
-  /* padding: 80px 20px; */
-  text-align: center;
+    content: "";
+    position: absolute;
+    bottom: 83%;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: rgb(12, 70, 94);
+    border-radius: 2px;
 }
 
+/* project */
+.projects {
+    /* padding: 80px 20px; */
+    text-align: center;
+}
+
+/* .my-prj {
+    width: 100%;
+    margin: -40px 0px;
+    text-align: center;
+    background-color: transparent;
+}
+.my-prj h1{
+    color: #2c0707;
+    text-transform: capitalize;
+
+} */
+
+/* .services {
+  text-align: center;
+  padding: 90px 10px;
+  background-color: rgba(67, 202, 202, 0.265);
+  position: relative;
+  overflow: hidden;
+} */
+.my-projects-card {
+    text-align: center;
+    padding: 90px 10px;
+    /* background-color: rgba(67, 202, 202, 0.265); */
+    position: relative;
+    overflow: hidden;
+}
+
+.my-projects-card h1 {
+    color: rgb(4, 82, 94);
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    flex: 0 0 33.33%;
+    /* 3 cards per slide */
+    background: white;
+    margin: 10px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* buttons */
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background: linear-gradient(90deg, rgb(69, 34, 5), rgb(4, 102, 114));
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.homebtn {
+    height: 50px;
+    width: 160px;
+    margin: 10px auto;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgb(4, 102, 114), rgb(69, 34, 5));
+    box-shadow: 0 4px 8px rgba(4, 102, 114, 0.5);
+}
+
+.homebtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.prbtn {
+    height: 50px;
+    width: 160px;
+    margin: 10px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(4, 102, 114, 0.5);
+}
+
+
+.prbtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.prbtn:hover {
+    /* background-color: #063f55; */
+    background: linear-gradient(135deg, rgb(4, 102, 114), rgb(69, 34, 5));
+    /* background: none; */
+    /* border: 3px solid #581515; */
+    color: #ffffff !important;
+}
+
+.prbtn a:hover {
+    color: #2c0707 !important;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 /* --- Grid Layout --- */
+.project1 {
+    position: relative;
+    z-index: -20;
+}
+
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 /* --- Card --- */
 .card {
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
-  border: 2px solid rgb(12, 70, 94);
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border: 2px solid rgb(12, 70, 94);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
 .card-content {
-  padding: 20px;
-  flex-grow: 1;
+    padding: 20px;
+    flex-grow: 1;
 }
 
 .card-content h2 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: rgb(12, 70, 94);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: rgb(12, 70, 94);
 }
 
 .card-content p {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 /* --- Button --- */
 .btn {
-  display: inline-block;
-  background: rgb(12, 70, 94);
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: 0.3s;
+    display: inline-block;
+    background: rgb(12, 70, 94);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-  background: transparent;
-  color: rgb(12, 70, 94);
-  border: 2px solid rgb(12, 70, 94);
+    background: transparent;
+    color: rgb(12, 70, 94);
+    border: 2px solid rgb(12, 70, 94);
 }
+
 .hr-section {
-  position: relative;
-  z-index: -1;
+    position: relative;
+    z-index: -1;
 }
+
 .hr-section::before,
 .hr-section::after {
-  z-index: 0;
+    z-index: 0;
 }
 
 
@@ -436,46 +584,47 @@ h1>.crd-skl {
 
 
 .my-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 30px 10px;
-  font-family: sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    font-family: sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: rgb(69, 34, 5);
+    color: rgb(69, 34, 5);
 }
 
 .footer-text {
-  font-size: 0.9rem;
-  color: #ccc;
+    font-size: 0.9rem;
+    color: #ccc;
 }
+
 @media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 
@@ -559,5 +708,20 @@ h1>.crd-skl {
         height: auto;
         display: block;
         margin: 0 auto;
+    }
+}
+
+/* responsive */
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 50%;
+        /* 2 cards per slide */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 100%;
+        /* 1 card per slide */
     }
 }
