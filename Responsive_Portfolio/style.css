@@ -179,8 +179,8 @@
     line-height: 20px;
     padding: 70px 20px;
     margin-bottom: 30px;
-    position: relative;
-    z-index: -20;
+    /* position: relative;
+    z-index: -20; */
 }
 
 .int1 {
@@ -268,6 +268,9 @@
     position: relative;
     z-index: 1;
 }
+/* .crd-behind:hover{
+  box-shadow: 0 4px 8px rgba(4, 102, 114, 0.5);
+} */
 
 .crd-skl {
     text-align: center;
@@ -330,9 +333,9 @@ h1>.crd-skl {
 
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: rgba(239, 240, 240, 0.3) 0px 19px 38px, rgba(225, 233, 237, 0.22) 0px 15px 12px;
-}
+} */
 
 
 .project {
@@ -457,7 +460,7 @@ h1>.crd-skl {
 .homebtn {
     height: 50px;
     width: 160px;
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 16px;
     background: linear-gradient(135deg, rgb(4, 102, 114), rgb(69, 34, 5));
     box-shadow: 0 4px 8px rgba(4, 102, 114, 0.5);

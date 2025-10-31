@@ -157,11 +157,11 @@ header nav a:hover {
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 
 }
 
-.mycard {
+.mycard{
   display: flex;
   /* flex: 1 1 300px; */
   /* width around 300px but flexible */
@@ -299,8 +299,9 @@ header nav a:hover {
   width: 100%;
   text-align: center;
   padding: 60px 20px;
-  background-color: rgba(67, 202, 202, 0.265);
-  position: relative;
+  /* background-color: rgba(67, 202, 202, 0.265); */
+  /* position: relative; */ 
+  /* /* z-index: -1; */
   /* overflow: hidden; */
 
 }
@@ -343,13 +344,14 @@ header nav a:hover {
   border: none;
   color: #fff;
   background: linear-gradient(90deg, rgb(69, 34, 5), rgb(4, 102, 114));
-  z-index: -1;
-  cursor: pointer;
+ 
 }
 
 .myseeBtn {
   height: auto;
   width: auto;
+   z-index: -1;
+  cursor: pointer;
   /* border: 3px solid yellow; */
 }
 
@@ -515,7 +517,7 @@ header nav a:hover {
     width: 100%;
     text-align: center;
     padding: 40px 20px;
-    background-color: rgba(67, 202, 202, 0.265);
+    /* background-color: rgba(67, 202, 202, 0.265); */
 
   }
 
@@ -538,7 +540,7 @@ header nav a:hover {
     width: 100%;
     text-align: center;
     padding: 40px 20px 0px 20px;
-    background-color: rgba(67, 202, 202, 0.265);
+    /* background-color: rgba(67, 202, 202, 0.265); */
 
   }
    .myseeBtn {
