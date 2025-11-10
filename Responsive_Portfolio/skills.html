@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skills</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,89 @@
         rel="stylesheet">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="header/navebar.css">
+    <style>
+        #skills {
+            padding: 50px;
+            background-color: #f7fbff;
+        }
+
+        #skills h2 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0e5d38;
+            font-weight: 900;
+            font-family: "Satisfy", cursive;
+        }
+
+        #spn {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3a1338;
+            font-weight: 900;
+            font-family: "Satisfy", cursive;
+        }
+
+        #skills p {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        #skillsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skill-box {
+            width: 45%;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            height: 10px;
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0;
+            background-color: #3b1c59;
+            border-radius: 5px;
+            transition: width 2s ease;
+        }
+
+        .delete-btn {
+            margin-top: 8px;
+            background-color: transparent;
+            color: #4c033d;
+            border: 2px solid #39034a;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .delete-btn:hover {
+            background-color: #27570e;
+            border: 2px solid #39034a;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +114,7 @@
                 <div class="mynave">
                     <nav id="navbarr">
                         <a href="index.html">Introduction</a>
-                        <a href="skills.html">Skills</a>
+                        <a href="skills.html">skills</a>
                         <a href="services.html">Services</a>
                         <a href="project.html">project</a>
                         <a href="contact.html">Contact</a>
@@ -69,12 +152,26 @@
 
     <section class="project p-5 mx-auto hr-section hero ">
         <h1 class="textp">
-            My <span>Services</span>
+            My <span>Skills</span>
         </h1>
     </section>
+    <br>
+
+    <section id="skills">
+        <h2>My <span id="spn"> Skills </span></h2>
+        <p>Here are some of my technical skills:</p>
+
+        <div id="skillsContainer">
+
+        </div>
+    </section>
+
+    <br>
 
 
-    <section class="servicesSrv">
+
+
+    <!-- <section class="services">
         <div class="container card-main">
             <h1 class="srv">My <span> Services</span></h1>
             <p class="subtitle">
@@ -128,7 +225,7 @@
             <button onclick="goToProject()">See Portfolio</button>
 
         </div>
-    </section>
+    </section> -->
 
 
     <!-- footer  -->
@@ -150,12 +247,67 @@
         </div>
     </footer>
     <script>
-        
+
+        const skills = [
+            { name: "HTML", percent: 99 },
+            { name: "CSS", percent: 99 },
+            { name: "JavaScript", percent: 85 },
+            { name: "UI/UX", percent: 57 },
+            { name: "WordPress/CMS", percent: 75 },
+            { name: "Bootstrap", percent: 89 },
+        ];
+
+        const container = document.getElementById("skillsContainer");
+
+
+        function renderSkills() {
+            container.innerHTML = "";
+
+            skills.forEach((skill, index) => {
+
+                const skillBox = document.createElement("div");
+                skillBox.classList.add("skill-box");
+
+
+                skillBox.innerHTML = `
+        <div class="skill-name">
+          <span>${skill.name}</span>
+          <span>${skill.percent}%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0"></div>
+        </div>
+        <button class="btn btn-danger btn-sm mt-2 delete-btn">Delete</button>
+      `;
+
+
+                container.appendChild(skillBox);
+
+
+                setTimeout(() => {
+                    const fill = skillBox.querySelector(".progress-fill");
+                    fill.style.width = `${skill.percent}%`;
+                }, 100);
+
+
+                const deleteBtn = skillBox.querySelector(".delete-btn");
+                deleteBtn.addEventListener("click", () => {
+                    skills.splice(index, 1);
+
+                });
+            });
+        }
+
+        // 🚀 Call function when page loads
+        window.addEventListener("load", renderSkills);
     </script>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>

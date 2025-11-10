@@ -149,8 +149,10 @@ header nav a:hover {
   object-fit: contain;
 }
 
+
+
 .card-main {
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -161,7 +163,7 @@ header nav a:hover {
 
 }
 
-.mycard{
+.mycard {
   display: flex;
   /* flex: 1 1 300px; */
   /* width around 300px but flexible */
@@ -291,7 +293,7 @@ header nav a:hover {
   /* width: 80%; */
 }
 
-.services {
+.servicesSrv {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -300,7 +302,7 @@ header nav a:hover {
   text-align: center;
   padding: 60px 20px;
   /* background-color: rgba(67, 202, 202, 0.265); */
-  /* position: relative; */ 
+  /* position: relative; */
   /* /* z-index: -1; */
   /* overflow: hidden; */
 
@@ -309,7 +311,7 @@ header nav a:hover {
 .srv {
   font-size: 2.5rem;
   color: #2c3e50;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-family: "Satisfy", cursive;
   font-weight: bolder;
   color: #fff;
@@ -320,11 +322,12 @@ header nav a:hover {
   color: rgb(9, 81, 81);
 }
 
-.services .subtitle {
+.servicesSrv .subtitle {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px;ok ac */
 }
+
 
 /* .myseeBtn button {
   height: 50px;
@@ -344,15 +347,16 @@ header nav a:hover {
   border: none;
   color: #fff;
   background: linear-gradient(90deg, rgb(69, 34, 5), rgb(4, 102, 114));
- 
+
 }
 
 .myseeBtn {
   height: auto;
   width: auto;
-   z-index: -1;
+  z-index: -1;
   cursor: pointer;
-  /* border: 3px solid yellow; */
+  border: 3px solid yellow;
+  position: relative;
 }
 
 .myseeBtn button::before {
@@ -511,45 +515,110 @@ header nav a:hover {
 
 
 @media (max-width: 1200px) {
-  .services {
+  /* .servicesSrv-srv-srv {
     display: flex;
     height: 200vh;
     width: 100%;
     text-align: center;
     padding: 40px 20px;
-    /* background-color: rgba(67, 202, 202, 0.265); */
+    background-color: rgba(67, 202, 202, 0.265);
 
-  }
+  } */
 
-  .myseeBtn {
+  /* .myseeBtn {
     height: auto;
     width: auto;
-    /* border: 3px solid yellow; */
+    border: 3px solid yellow;
     position: absolute;
     top: 68%;
     left: 40%;
-  }
+  } */
 
 
 }
 
-@media (max-width: 768px) {
-  .services {
+@media only screen and (max-width: 425px) {
+  /* .servicesSrv {
     display: flex;
-    height: 200vh;
+    height: 300vh;
     width: 100%;
     text-align: center;
     padding: 40px 20px 0px 20px;
-    /* background-color: rgba(67, 202, 202, 0.265); */
+    background-color: rgba(16, 235, 235, 0.265);
 
-  }
-   .myseeBtn {
+  } */
+
+  /* .myseeBtn {
     height: auto;
     width: auto;
-    /* border: 3px solid yellow; */
+    border: 3px solid yellow;
     position: absolute;
     top: 89%;
     left: 40%;
-  }
+    z-index: -1;
 
+  } */
+
+}
+
+@media (max-width: 1193px) {
+  /* .myseeBtn {
+    height: auto;
+    margin-top: 300px !important;
+    width: auto;
+    z-index: -1;
+    cursor: pointer;
+    border: 3px solid yellow;
+    position: relative;
+  } */
+}
+
+@media (max-width: 768px) {
+  /* .myseeBtn {
+    height: auto;
+    margin: 280px 0px 140px 0px !important;
+    width: auto;
+    z-index: -1;
+    cursor: pointer;
+    border: 3px solid yellow;
+    position: relative;
+    top: 160px;
+  } */
+}
+
+@media (max-width: 320px) {
+  /* .myseeBtn {
+    height: auto;
+    margin: 690px 0px 160px 0px !important;
+    width: auto;
+    z-index: -1;
+    cursor: pointer;
+    border: 3px solid yellow;
+    position: relative;
+    top: 160px;
+  } */
+}
+
+@media (max-width: 585px) {
+  /* .myseeBtn {
+    height: auto;
+    margin: 690px 0px 160px 0px !important;
+    width: auto;
+    z-index: -1;
+    cursor: pointer;
+    border: 3px solid yellow;
+    position: relative;
+    top: 160px;
+  } */
+   .card-main {
+  height: 500vh !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+
+}
 }
