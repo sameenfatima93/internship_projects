@@ -95,6 +95,19 @@
             background-color: #27570e;
             border: 2px solid #39034a;
         }
+        .inputmine:focus{
+            /* background-color: #27570e; */
+            border: 2px solid #27570e ;
+            outline: #27570e;
+
+        }
+           .inputmine:focus{
+            /* background-color: #27570e; */
+            border: 2px solid #27570e ;
+            outline: #27570e;
+
+            
+        }
     </style>
 </head>
 
@@ -160,10 +173,14 @@
     <section id="skills">
         <h2>My <span id="spn"> Skills </span></h2>
         <p>Here are some of my technical skills:</p>
-
-        <div id="skillsContainer">
-
+        <!-- HTML: Input field + Add button -->
+        <div class="mb-4 d-flex gap-2" style="max-width:500px; margin:auto;">
+            <input type="text" id="newSkillInput" class="form-control inputmine" placeholder="Skill name">
+            <input type="number" id="newPercentInput" class="form-control" placeholder="Percent" min="0" max="100">
+            <button id="addSkillBtn" class="btn btn-success">Add</button>
         </div>
+
+        <div id="skillsContainer"></div>
     </section>
 
     <br>
@@ -246,8 +263,9 @@
             <p class="footer-text">© 2025 Sameen Fatima | All Rights Reserved</p>
         </div>
     </footer>
-    <script>
 
+
+    <script>
         const skills = [
             { name: "HTML", percent: 99 },
             { name: "CSS", percent: 99 },
@@ -258,49 +276,71 @@
         ];
 
         const container = document.getElementById("skillsContainer");
+        const newSkillInput = document.getElementById("newSkillInput");
+        const newPercentInput = document.getElementById("newPercentInput");
+        const addSkillBtn = document.getElementById("addSkillBtn");
 
-
+        // Render skills dynamically
         function renderSkills() {
             container.innerHTML = "";
 
             skills.forEach((skill, index) => {
-
                 const skillBox = document.createElement("div");
                 skillBox.classList.add("skill-box");
 
-
                 skillBox.innerHTML = `
-        <div class="skill-name">
-          <span>${skill.name}</span>
-          <span>${skill.percent}%</span>
-        </div>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: 0"></div>
-        </div>
-        <button class="btn btn-danger btn-sm mt-2 delete-btn">Delete</button>
-      `;
-
+            <div class="skill-name">
+                <span>${skill.name}</span>
+                <span>${skill.percent}%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0"></div>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+            </div>
+        `;
 
                 container.appendChild(skillBox);
 
-
+                // Animate progress
                 setTimeout(() => {
                     const fill = skillBox.querySelector(".progress-fill");
                     fill.style.width = `${skill.percent}%`;
                 }, 100);
 
-
+                // DELETE button
                 const deleteBtn = skillBox.querySelector(".delete-btn");
                 deleteBtn.addEventListener("click", () => {
                     skills.splice(index, 1);
-
+                    renderSkills();
                 });
             });
         }
 
-        // 🚀 Call function when page loads
+        // ADD button functionality
+        addSkillBtn.addEventListener("click", () => {
+            const newSkillName = newSkillInput.value.trim();
+            const newSkillPercent = Number(newPercentInput.value);
+
+            if (newSkillName && !isNaN(newSkillPercent) && newSkillPercent >= 0 && newSkillPercent <= 100) {
+                skills.push({ name: newSkillName, percent: newSkillPercent });
+                newSkillInput.value = "";
+                newPercentInput.value = "";
+                renderSkills();
+            } else {
+                alert("Please enter valid skill name and percent (0-100).");
+            }
+        });
+
+        // Initial render
         window.addEventListener("load", renderSkills);
     </script>
+
+
+
+
+
 
 
 

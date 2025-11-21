@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-heading-title: #8A1A27;
+    /* Maroon text */
+    --color-body-bg: #F5F0E8;
+    /* Cream background */
+    --color-bg-nav-dark: #3A2A21;
+    /* Navbar & footer dark brown */
+    --color-button-hilight: #C99B5E;
+    /* Golden brown buttons */
+    --color-card: #EEE5D6;
+    /* Light beige card */
+    --color-text: #2C1B14;
+    /* Dark readable brown */
+}
+
+.dark-mode {
+    --color-heading-title: #F5F0E8;
+    /* Light text */
+    --color-body-bg: #3A2A21;
+    /* Deep brown background */
+    --color-bg-nav-dark: #261A15;
+    /* Even darker for header/footer */
+    --color-button-hilight: #C99B5E;
+    /* Same golden accent */
+    --color-card: #4B3A2F;
+    /* Dark card */
+    --color-text: #FFFFFF;
+    /* White text */
+}
+
+.sidebar {
+        border-left: 1px solid gray;
+    
+    width: 200px;
+    /* border: 4px outset black; */
+    /* overflow: scroll; */
+    /* background-color: #dcccb6; */
+    float: left;
+    /* padding: 20px; */
+    /* background: #f7f7f7;
+    border: 2px solid #e3e3e3;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px; */
+}
+
+.sidebar ul li {
+    height: 40px;
+    /* width: 100px !important; */
+    /* height: auto;
+    width: auto; */
+    /* padding: 30px; */
+    list-style: none;
+ font-size: 1.18rem;
+ /* font-weight: 600; */
+ font-family: 'Times New Roman', Times, serif;
+ text-align: left;
+     border-bottom: 1px solid gray;
+
+}
+.form-select{
+    width: 37%;
+}
+.myCard:hover{
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+border: 2px solid rgb(121, 69, 6);
+/* transition: all 1s ease-in; */
+}
+.optionDroupdown{
+    background-color: #3A2A21 !important;
+}
+.form-select:focus {
+    border-color: #5e3f31 !important;
+    outline:#d2c8c4 !important; ;
+    box-shadow: 0 0 0 .25rem rgba(77, 63, 53, 0.557);
+}
+.searchbtn{
+    background-color:#5e3f31  ;
+    color: #ffffff;
+    align-items: center;
+    width: 100px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.searchbtn:hover{
+    border: 2px solid #5e3f31;
+    color: #5e3f31;
+}
+.form-select{
+    color: #6b4209 !important;
+    font-size: 1.12rem;
+}
+.sidebar ul li:hover{
+/* background-color: #a87a3d; */
+border-top: 3px solid #a87a3d;
+border-bottom: 3px solid #a87a3d;
+}

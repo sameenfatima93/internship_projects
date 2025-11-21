@@ -101,3 +101,7 @@ function goToProject() {
             window.location.href = "project.html"
 
         }
+
+
+
+        
