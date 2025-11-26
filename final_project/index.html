@@ -7,13 +7,19 @@
     <title>DryDelights</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BBH+Sans+Bartle&family=Satisfy&family=Vidaloka&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BBH+Sans+Bartle&family=Satisfy&family=Vidaloka&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="navbarstyle.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,7 +39,7 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="product.html" class="nav-item nav-link">Products</a>
                         <a href="contact.html" class="nav-item nav-link">Contact us</a>
 
@@ -75,10 +81,531 @@
         <div class="hero-content">
             <h1>Fresh & Premium Dry Fruits</h1>
             <p>Healthy • Organic • Delivered Fresh</p>
-            <a href="product.html" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+            <a href="product.html" class="btn btn-primary ind-btn btn-lg mt-3">Shop Now</a>
         </div>
     </div>
     <!-- hero section end -->
+
+    <!-- Featurs Section Start -->
+    <div class="container-fluid featurs py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-car-side fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Free Shipping</h5>
+                            <p class="mb-0">Free on order over $300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-user-shield fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Security Payment</h5>
+                            <p class="mb-0">100% security payment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>30 Day Return</h5>
+                            <p class="mb-0">30 day money guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fa fa-phone-alt fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>24/7 Support</h5>
+                            <p class="mb-0">Support every time fast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featurs Section End -->
+
+    <!-- Featurs Start -->
+    <!-- <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-secondary rounded border border-secondary">
+                            <img src="images/Dried Fruits/raisins(kishmish).jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-primary text-center p-4 rounded">
+                                    <h5 class="text-white">Dried Fruits</h5>
+                                    <h3 class="mb-0">20% OFF</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-dark rounded border border-dark">
+                            <img src="images/nuts/pistachios.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-light text-center p-4 rounded">
+                                    <h5 class="text-primary">Tasty Nuts</h5>
+                                    <h3 class="mb-0">Free delivery</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-dark rounded border border-dark">
+                            <img src="images/seeds/sunflower.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-light text-center p-4 rounded">
+                                    <h5 class="text-primary">Seed's</h5>
+                                    <h3 class="mb-0">Oreganic</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-dark rounded border border-dark">
+                            <img src="images/powder-dryFruits/walnut-powder.png" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-light text-center p-4 rounded">
+                                    <h5 class="text-primary ">DF Powder</h5>
+                                    <h3 class="mb-0">100% pure</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-dark rounded border border-dark">
+                            <img src="images/mix/trail-mix.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-light text-center p-4 rounded">
+                                    <h5 class="text-primary ">Mix DryFruits</h5>
+                                    <h3 class="mb-0">Healthy diet</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-primary rounded border border-primary">
+                            <img src="images/Premium-nuts/macadamia.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-secondary text-center p-4 rounded">
+                                    <h5 class="text-white">Premium-nuts</h5>
+                                    <h3 class="mb-0">Discount 30$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Featurs End -->
+
+    <!-- Featurs Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+
+            <!-- Carousel Container -->
+            <div class="my-carousel-container position-relative">
+
+                <!-- Wrapper -->
+                <div class="my-carousel-wrapper d-flex">
+
+                    <!-- 6 Cards — same as before -->
+                    <div class="my-slide">
+                        <a href="#">
+                            <div class="service-item bg-secondary rounded border border-secondary">
+                                <img src="images/Dried Fruits/raisins(kishmish).jpg" class="img-fluid rounded-top w-100"
+                                    alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-primary text-center p-4 rounded">
+                                        <h5 class="text-white">Dried Fruits</h5>
+                                        <h3 class="mb-0">20% OFF</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="my-slide col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-dark rounded border border-dark">
+                                <img src="images/nuts/pistachios.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-light text-center p-4 rounded">
+                                        <h5 class="text-primary">Tasty Nuts</h5>
+                                        <h3 class="mb-0">Free delivery</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="my-slide col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-dark rounded border border-dark">
+                                <img src="images/seeds/sunflower.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-light text-center p-4 rounded">
+                                        <h5 class="text-primary">Seed's</h5>
+                                        <h3 class="mb-0">Oreganic</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="my-slide col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-dark rounded border border-dark">
+                                <img src="images/powder-dryFruits/walnut-powder.png" class="img-fluid rounded-top w-100"
+                                    alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-light text-center p-4 rounded">
+                                        <h5 class="text-primary ">DF Powder</h5>
+                                        <h3 class="mb-0">100% pure</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="my-slide col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-dark rounded border border-dark">
+                                <img src="images/mix/trail-mix.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-light text-center p-4 rounded">
+                                        <h5 class="text-primary ">Mix DryFruits</h5>
+                                        <h3 class="mb-0">Healthy diet</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="my-slide col-md-6 col-lg-4">
+                        <a href="#">
+                            <div class="service-item bg-primary rounded border border-primary">
+                                <img src="images/Premium-nuts/macadamia.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="px-4 rounded-bottom">
+                                    <div class="service-content bg-secondary text-center p-4 rounded">
+                                        <h5 class="text-white">Premium-nuts</h5>
+                                        <h3 class="mb-0">Discount 30$</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <!-- <button class="my-carousel-btn prev">❮</button>
+      <button class="my-carousel-btn next">❯</button> -->
+
+                <!-- Dots -->
+                <!-- <div class="my-carousel-dots"></div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Featurs End -->
+
+    <!-- Banner Section Start-->
+    <div class="container-fluid banner bg-secondary my-5">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="py-4">
+                        <h1 class="display-3 text-white">Fresh & Premium DryFruits</h1>
+                        <p class="fw-normal display-5 text-dark mb-4">Straight to Your Door</p>
+                        <p class="mb-4 text-dark">Healthy • Organic • Tasty Delivered Fresh Every Time, Straight from
+                            Nature to Your Doorstep</p>
+                        <a href="#"
+                            class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/bgimages/bannerbg.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
+                            style="width: 140px; height: 140px; top: 0; left: 0;">
+                            <h1 style="font-size: 100px;">1</h1>
+                            <div class="d-flex flex-column">
+                                <span class="h2 mb-0">50$</span>
+                                <span class="h4 text-muted mb-0">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+
+    <!-- Bestsaler Product Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-4 best-sel-main-hed">Bestseller Products</h1>
+                <p class="best-sel-mainp">Most-loved dry fruits handpicked for quality, freshness, and unbeatable taste.”
+                    “Shop the top-selling favorites trusted by thousands of happy customers.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded best-sel-card ">
+                        <div class="row align-items-center">
+                            <div class="col-6 best-sel">
+                                <img src="images/Dried Fruits/figs(injeer).jpg" class="img-fluid " alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5 best-sel-h5">figs (injeer)</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star "></i>
+                                </div>
+                                <h4 class="mb-3 best-sel-h5">3.12 $</h4>
+                                <a href="#" class="btn border  rounded-pill px-3 best-sel-btn text-primary"><i
+                                        class="fa fa-shopping-bag text-primary me-2 "></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded best-sel-card">
+                        <div class="row align-items-center">
+                            <div class="col-6 best-sel">
+                                <img src="images/mix/mix-nut.jpg" class="img-fluid " alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5 best-sel-h5 ">Mix Niut</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3 best-sel-h5">4.20 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 best-sel-btn text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded best-sel-card">
+                        <div class="row align-items-center">
+                            <div class="col-6 best-sel">
+                                <img src="images/seeds/flax seed.jpg" class="img-fluid " alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5 best-sel-h5">Flax Seed</a>
+                                <div class="d-flex my-3 ">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3 best-sel-h5">2.22 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 best-sel-btn text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded best-sel-card">
+                        <div class="row align-items-center">
+                            <div class="col-6 best-sel">
+                                <img src="images/Premium-nuts/hazelNuts.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5 best-sel-h5">Hazel Nuts</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3 best-sel-h5">3.00 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 best-sel-btn text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded best-sel-card">
+                        <div class="row align-items-center">
+                            <div class="col-6 best-sel">
+                                <img src="images/powder-dryFruits/cashew.png" class="img-fluid " alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h6 best-sel-h5">Cashew powder</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3 best-sel-h5">4.11 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 best-sel-btn text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded  best-sel-card">
+                        <div class="row align-items-center ">
+                            <div class="col-6 best-sel">
+                                <img src="images/nuts/pine-nuts.jpg" class="img-fluid " alt="" >
+                            </div>
+                            <div class="col-6 ">
+                                <a href="#" class="h5 best-sel-h5">Pine Nuts</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3 best-sel-h5">2.12 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 best-sel-btn text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bestsaler Product End -->
+
+    <!-- Fact Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="fact-mainbg p-5 rounded">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>satisfied customers</h4>
+                            <h1>1963</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality of service</h4>
+                            <h1>99%</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4 id="certificat">quality certificates</h4>
+                            <h1>33</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>Available Products</h4>
+                            <h1>789</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact Start -->
+
+<!-- tastimonal start-->
+ <section class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold tastim-h">What Our Clients Say</h2>
+        <p class=" tastim-p">Real experiences from customers who trust our quality every day.</p>
+    </div>
+
+    <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6">
+            <div class="testimonial-card p-4">
+                <img src="images/custumer images/boy1.jpg" alt="Client 1" class="client-img mb-3">
+                <h5 class="fw-bold tastim-ch">jack Rouben</h5>
+                <p class="client-review ">“DryDelights ki quality hamesha fresh aur premium hoti hai. Bohot pasand aaya!”</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-6">
+            <div class="testimonial-card p-4">
+                <img src="images/custumer images/girl2.jpg" alt="Client 2" class="client-img mb-3">
+                <h5 class="fw-bold tastim-ch">Ayesha Malik</h5>
+                <p class="client-review">“Packaging, taste aur freshness sab kuch five-star! Highly recommended.”</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-6">
+            <div class="testimonial-card p-4">
+                <img src="images/custumer images/boy2.jpg" alt="Client 3" class="client-img mb-3">
+                <h5 class="fw-bold tastim-ch">Faiz Ahmad</h5>
+                <p class="client-review">“Walnuts aur almonds super fresh thay. Main regular customer ban chuki hoon!”</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="col-md-6">
+            <div class="testimonial-card p-4">
+                <img src="images/custumer images/girl1.jpg" alt="Client 4" class="client-img mb-3">
+                <h5 class="fw-bold tastim-ch">jasmine Nasir</h5>
+                <p class="client-review">“Customer service bohot achi aur nuts bilkul premium quality ke!”</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- tastimonal end-->
+
+
 
 
     <!-- Footer Start -->
@@ -179,6 +706,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="navbar.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

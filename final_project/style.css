@@ -7,14 +7,22 @@
 
 /* Root variables for light mode */
 :root {
-    --color-heading-title: #8A1A27; /* Maroon headings */
-    --color-body-bg: #ffffff;        /* Light background */
-    --color-bg-nav-dark: #3A2A21;    /* Navbar/footer dark brown */
-    --color-button-hilight: #d94e33; /* Golden accent buttons */
-    --color-card: #faf7f2;           /* Light card background */
-    --color-text: #2C1B14;           /* Dark text */
-    --color-input-bg: #f5f0e8;       /* Input background */
-    --color-input-text: #2C1B14;     /* Input text */
+    --color-heading-title: #8A1A27;
+    /* Maroon headings */
+    --color-body-bg: #ffffff;
+    /* Light background */
+    --color-bg-nav-dark: #3A2A21;
+    /* Navbar/footer dark brown */
+    --color-button-hilight: #d94e33;
+    /* Golden accent buttons */
+    --color-card: #faf7f2;
+    /* Light card background */
+    --color-text: #2C1B14;
+    /* Dark text */
+    --color-input-bg: #f5f0e8;
+    /* Input background */
+    --color-input-text: #2C1B14;
+    /* Input text */
 }
 
 /* Dark mode variables */
@@ -40,7 +48,8 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 500px;  /* Change this value */
+    height: 500px;
+    /* Change this value */
     overflow: hidden;
 }
 
@@ -63,8 +72,288 @@ body {
     color: rgb(255, 252, 249);
 
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-family: "Abril Fatface", serif;
     font-size: 3.60rem;
     font-weight: 700;
+    color: #ffffff !important;
 }
+
+.ind-btn {
+    background-color: #c5360f;
+    border: none;
+}
+
+.ind-btn:hover {
+    background-color: rgb(4, 118, 80);
+}
+
+
+/*** featurs Start ***/
+.featurs .featurs-item .featurs-icon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.featurs .featurs-item .featurs-icon::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: var(--bs-secondary);
+    position: absolute;
+    bottom: -10px;
+    transform: translate(-50%);
+    transform: rotate(45deg);
+    background: var(--bs-secondary);
+
+}
+
+.my-carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    /* thoda top-bottom spacing */
+}
+
+
+.my-carousel-wrapper {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.8s ease-in-out;
+    /* smooth slide */
+}
+
+.my-slide {
+    flex: 0 0 calc(33.33% - 13.33px);
+    /* 3 cards per view desktop */
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for stylish look */
+.my-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Navigation Buttons */
+.my-carousel-btn {
+    position: absolute;
+    top: 45%;
+    background: transparent;
+    /* border: 3px solid rgb(214, 74, 23) !important; */
+    color: rgb(214, 74, 23);
+    border: none;
+    padding: 10px 14px;
+    font-size: 26px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.my-carousel-btn:hover {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots */
+.my-carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.my-carousel-dots span {
+    width: 10px;
+    height: 10px;
+    background: #87ea0d;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.my-carousel-dots .active {
+    background: #df3f05;
+}
+
+@media (max-width: 768px) {
+    .my-carousel-item {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .my-slide {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    /* 2 cards per view */
+}
+
+@media (max-width: 768px) {
+    .my-slide {
+        flex: 0 0 100%;
+    }
+
+    /* 1 card per view */
+}
+
+/*** featurs End ***/
+
+/*** Banner Section Start ***/
+.banner .banner-btn:hover {
+    background: var(--color-button-hilight);
+}
+
+/*** Banner Section End ***/
+
+/* bestsellor product */
+
+/* Make product images perfectly round */
+.best-sel img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50% !important;
+    transition: .4s;
+}
+
+/* Card styling */
+.best-sel-card {
+    background: var(--color-input-bg);
+    color: var(--color-heading-title);
+    border-radius: 15px;
+    transition: .4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* Hover Effect: Orange Glow + Lift */
+.best-sel-card:hover {
+    background: #e8a21ebe;
+    /* light orange tint */
+    color: #87ea0d;
+    transform: translateY(-5px);
+    /* box-shadow: 0px 10px 25px rgba(255, 140, 0, 0.3); */
+}
+
+.best-sel-card img:hover {
+    transform: scale(1.05);
+    /* slight zoom */
+}
+
+.best-sel-btn {
+    /* background-color: rgb(128, 218, 10)!important; */
+    border: 3px solid rgb(128, 218, 10) !important;
+
+}
+
+.best-sel-main-hed {
+    color: var(--color-text) !important;
+}
+
+.best-sel-mainp {
+    color: var(--color-text) !important;
+}
+
+.best-sel-h5 {
+    color: var(--color-heading-title) !important;
+}
+
+/* fact of star */
+
+/*** Facts Start ***/
+.fact-mainbg {
+    background-color: var(--color-input-bg);
+}
+
+.counter {
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.counter i {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.counter h4 {
+    color: var(--color-button-hilight);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* width: auto; */
+
+    /* text-align: center !important; */
+}
+
+#certificat {
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    /* align-self: center !important; */
+}
+
+.counter h1 {
+    margin-bottom: 0;
+}
+
+/*** Facts End ***/
+
+/* tastimonal start */
+/* Testimonial Card */
+.testimonial-card {
+    background:#f5f1ee;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(240, 94, 94, 0.1);
+}
+
+/* Client Image */
+.client-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e6e6e6;
+    margin: auto;
+    display: block;
+}
+
+/* Review text */
+.client-review {
+    font-style: italic;
+    color: var(--color-bg-nav-dark);
+}
+.tastim-h{
+    color:var(--color-heading-title);
+}
+.tastim-ch{
+    color:#8A1A27;
+}
+.tastim-p{
+    color:var(--color-heading-title) !important;
+}
+/* tastimonal end */
